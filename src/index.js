@@ -3,8 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ConsoleShooter from './ConsoleShooter';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var h = 40;
+var w = 120;
+var s = 1.3;
+
+ReactDOM.render(<ConsoleShooter width={w * s} height={h * s}/>, document.getElementById('root'));
+
+console.log(window.innerHeight);
+console.log(window.innerWidth);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
